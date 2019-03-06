@@ -1,0 +1,6 @@
+## synchronized同步语句块
+
+用关键字synchronized声明方法在某些情况下是有弊端的，比如A线程调用同步方法执行一个长时间
+的任务，那么B线程则必须等待比较长的时间。在这样的情况下可以使用synchronized同步语句块来
+解决。synchronized方法是对当前对象进行加锁，而synchronized代码块是对某一个对象（任意对象）
+进行加锁。
